@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <header_stacti msg="Prueba de linkage" />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import header_stacti from "./components/Header.vue";
-export default {
-  name: "app",
-  components: {
-    header_stacti
-  }
-};
+// import header_stacti from "./components/SideNavbar.vue";
+// export default {
+//   name: "app",
+//   components: {
+//     header_stacti
+//   }
+// };
 </script>
 
 <style>
