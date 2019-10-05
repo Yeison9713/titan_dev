@@ -1,54 +1,36 @@
 <template>
-  <div>
-    <div>
-      <b-card bg-variant="light">
-        <b-form-group
-          id="fieldset-1"
-          description="Let us know your name."
-          label="Enter your name"
-          label-for="input-1"
-          :invalid-feedback="invalidFeedback"
-          :valid-feedback="validFeedback"
-          :state="state"
-        >
-          <b-form-input id="input-1" v-model="name" :state="state" trim></b-form-input>
-        </b-form-group>
-      </b-card>
+  <div style="margin: 25px; background: #fff;">
+    <b-row>
+      <b-col>
+        <h2>Example heading <b-badge>New</b-badge></h2>
+        <b-badge variant="primary">Primary</b-badge>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col>
+        <b-card bg-variant="light">
+          <b-form inline>
+            <b-col>
+              <label class="sr-only" for="inline-form-input-name">Name</label>
+              <b-input
+                id="inline-form-input-name"
+                class="mb-2 mr-sm-2 mb-sm-0"
+                placeholder="Jane Doe"
+              ></b-input>
+            </b-col>
 
-      <b-card bg-variant="light">
-        <b-form-group label-size="lg" label-class="font-weight-bold pt-0" class="mb-0">
-          <b-form-group
-            label-cols-sm="3"
-            label="City:"
-            label-align-sm="right"
-            label-for="nested-city"
-          >
-            <b-form-input id="nested-city"></b-form-input>
-          </b-form-group>
-
-          <b-form-group
-            label-cols-sm="3"
-            label="State:"
-            label-align-sm="right"
-            label-for="nested-state"
-          >
-            <b-form-input id="nested-state"></b-form-input>
-          </b-form-group>
-
-          <b-form-group
-            label-cols-sm="3"
-            label="Country:"
-            label-align-sm="right"
-            label-for="nested-country"
-          >
-            <b-form-input id="nested-country"></b-form-input>
-          </b-form-group>
-
-          <b-form-group label-cols-sm="3" label="Ship via:" label-align-sm="right" class="mb-0">
-            <b-form-radio-group class="pt-2" :options="['Air', 'Courier', 'Mail']"></b-form-radio-group>
-          </b-form-group>
-        </b-form-group>
-      </b-card>
-    </div>
+            <b-col>
+              <label class="sr-only" for="inline-form-input-username">Username</label>
+              <b-input-group prepend="@" class="mb-2 mr-sm-2 mb-sm-0">
+                <b-input id="inline-form-input-username" placeholder="Username"></b-input>
+              </b-input-group>
+            </b-col>
+            <b-col>
+              <b-button variant="primary">Save</b-button>
+            </b-col>
+          </b-form>
+        </b-card>
+      </b-col>
+    </b-row>
   </div>
 </template>
