@@ -51,7 +51,7 @@ body {
 .menu {
   display: flex;
   flex-direction: column;
-  background: #111;
+  background: #aba3f1;
   height: 100%;
 }
 
@@ -72,10 +72,6 @@ body {
   height: 100%;
   background: white;
   transition: all 300ms;
-}
-
-ul li:hover {
-  background: rgb(65, 60, 60);
 }
 
 .toggle-check:checked ~ .container-menu {
@@ -105,7 +101,7 @@ ul li:hover {
   border: none;
   border-radius: 3px;
   margin: 3px;
-  background: #682bda;
+  background: rgb(31, 50, 144);
   color: #fff;
   cursor: pointer;
   transition: opacity 300ms;
